@@ -1,0 +1,48 @@
+.head {
+    max-width: 450px;
+    margin: auto;
+    // margin-right: auto;
+    text-align: center;
+
+}
+
+.head__subtitle {
+    color: $color-subtext;
+    font-size: $font-size-18;
+    text-transform: $text-uppercase;
+    padding-bottom: 15px;
+}
+
+.head__title {
+    font-family: $font-title;
+    color: $color-gold;
+    font-size: $font-size-60;
+    text-transform: $text-uppercase;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.head__title::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    border-bottom: 1px solid $color-gold;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.head__title::before {
+    content: '';
+    position: absolute;
+    background-color: $color-bg;
+    background-image: url(../images/bonfire-sharp.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 20px;
+    min-height: 20px;
+    top: 93%;
+    left: 46.5%;
+    padding: 0 5px;
+    z-index: 1;
+}

@@ -1,0 +1,33 @@
+//colors
+$color-gold: #FC0;
+$color-text: #333;
+$color-title: #666;
+$color-subtext: #898F8F;
+$color-bg: white;
+
+
+//fonts
+$default-font-name: 'Raleway';
+$fallback: Arial, Helvetica, sans-serif;
+$main-font: $default-font-name, $fallback;
+
+$font-title-name: 'Roboto';
+$font-title: $font-title-name, $fallback;
+
+$font-btn-name: 'Open Sans';
+$font-btn: $font-btn-name, $fallback;
+
+$font-path: './fonts/';
+
+//font size
+$font-size-14: 14px;
+$font-size-18: 18px;
+$font-size-24: 24px;
+$font-size-36: 36px;
+$font-size-60: 60px;
+
+//font format
+$text-uppercase: uppercase;
+//containers
+$container-padding: 70px;
+$container-max-width: 1170px;

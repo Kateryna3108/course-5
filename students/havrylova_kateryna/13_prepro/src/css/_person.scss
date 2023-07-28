@@ -1,0 +1,148 @@
+.person {
+    padding-top: 40px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    text-align: center;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+[class*="col-"] {
+    padding: 85px;
+    box-sizing: border-box;
+}
+
+.border_right {
+    border-right: 1px solid $color-gold;
+}
+
+
+.person__photo {
+    padding: 15px;
+    border: 1px solid $color-gold;
+    position: relative;
+    z-index: 1;
+
+}
+
+.person__photo::before {
+    content: '';
+    position: absolute;
+    background: $color-bg center;
+    width: 50%;
+    border: 1px solid $color-bg;
+    top: -1px;
+    bottom: -1px;
+    left: 25%;
+    z-index: -1;
+}
+
+.person__photo::after {
+    content: '';
+    position: absolute;
+    background: $color-bg center;
+    height: 50%;
+    border: 1px solid $color-bg;
+    left: -1px;
+    right: -1px;
+    top: 25%;
+    z-index: -1;
+}
+
+img {
+    max-width: 100%;
+    z-index: 1;
+}
+
+.person__name {
+    font-family: $font-title;
+    font-size: 36px;
+    text-transform: capitalize;
+    color: $color-title;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.person__name::after {
+    content: '';
+    position: absolute;
+    // background: $color-bg center;
+    width: 50%;
+    border-bottom: 1px solid $color-gold;
+    bottom: 0;
+    right: 25%;
+}
+
+.person__position {
+    font-family: $main-font;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 30px 0;
+    text-transform: capitalize;
+    color: $color-title;
+}
+
+.person__media {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+.person__describe {
+    padding: 50px 0;
+    position: relative;
+    text-align: center;
+}
+
+.person__describe::after {
+    content: '';
+    position: absolute;
+    border-bottom: 4px solid $color-gold;
+    width: 12%;
+    bottom: 20px;
+    right: 44%;
+    z-index: -1;
+}
+
+.person__describe::before {
+    content: '';
+    position: absolute;
+    border-bottom: 5px solid $color-bg;
+    width: 5px;
+    // height: 4px;
+    // padding: 20px;
+    bottom: 20px;
+    right: 52.8%;
+    z-index: 1;
+}
+
+.element::after {
+    content: '';
+    position: absolute;
+    border-bottom: 5px solid $color-bg;
+    width: 5px;
+    height: 4px;
+    // padding: 20px;
+    bottom: -148px;
+    right: 28%;
+    z-index: 1;
+}
+
+.btn {
+    font-family: $font-btn;
+    font-size: $font-size-14;
+    color: $color-title;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    background-color: $color-bg;
+    border: 1px solid var(--gold, #FC0);
+}

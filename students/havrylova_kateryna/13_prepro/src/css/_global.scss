@@ -1,0 +1,40 @@
+@font-face {
+    font-family: $main-font;
+    font-size: $font-size-14;
+    font-weight: 500;
+    // src: url('#{$font-path}raleway-v28-latin-500.woff2') format('woff2');
+    src: url('./fonts/raleway-v28-latin-500.woff2') format('woff2');
+
+}
+
+
+@font-face {
+    font-family: $font-title;
+    font-size: $font-size-60;
+    font-weight: 900;
+    src: url('#{$font-path}roboto-v30-latin-900.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: $font-btn;
+    font-size: $font-size-14;
+    font-weight: 700;
+    src: url('#{$font-path}open-sans-v35-latin-700.woff2') format('woff2');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: $main-font;
+    font-size: $font-size-14;
+    color: $color-text;
+}
+
+.container {
+    padding: $container-padding;
+    max-width: $container-max-width;
+    margin: 0 auto;
+}
