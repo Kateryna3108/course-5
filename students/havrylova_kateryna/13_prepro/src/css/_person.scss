@@ -97,9 +97,9 @@ img {
 }
 
 .person__describe {
-    padding: 50px 0;
     position: relative;
-    text-align: center;
+    // text-align: center;
+    // padding: 50px 0;
 }
 
 .person__describe::after {
@@ -107,7 +107,7 @@ img {
     position: absolute;
     border-bottom: 4px solid $color-gold;
     width: 12%;
-    bottom: 20px;
+    bottom: -20px;
     right: 44%;
     z-index: -1;
 }
@@ -117,11 +117,15 @@ img {
     position: absolute;
     border-bottom: 5px solid $color-bg;
     width: 5px;
-    // height: 4px;
-    // padding: 20px;
-    bottom: 20px;
+    bottom: -20px;
     right: 52.8%;
     z-index: 1;
+}
+
+.element {
+    position: relative;
+    text-align: center;
+    padding: 50px 0;
 }
 
 .element::after {
@@ -130,9 +134,8 @@ img {
     border-bottom: 5px solid $color-bg;
     width: 5px;
     height: 4px;
-    // padding: 20px;
-    bottom: -148px;
-    right: 28%;
+    bottom: 30px;
+    right: 46.2%;
     z-index: 1;
 }
 
