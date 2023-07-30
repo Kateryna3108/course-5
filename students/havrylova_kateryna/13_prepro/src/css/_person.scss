@@ -14,17 +14,26 @@
 }
 
 [class*="col-"] {
-    padding: 85px;
+    padding: 15px;
     box-sizing: border-box;
+}
+
+.person_info {
+    padding: 70px;
 }
 
 .border_right {
     border-right: 1px solid $color-gold;
 }
 
+.person__photo-img {
+    border: 1px solid $color-gold;
+}
 
 .person__photo {
     padding: 15px;
+    display: flex;
+    justify-content: center;
     border: 1px solid $color-gold;
     position: relative;
     z-index: 1;
@@ -140,12 +149,16 @@ img {
 }
 
 .btn {
+    padding: 5px 10px;
+    background-color: $color-bg;
+    border: 1px solid var(--gold, #FC0);
+}
+
+.btn__title {
+    text-decoration: none;
     font-family: $font-btn;
     font-size: $font-size-14;
     color: $color-title;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 5px 10px;
-    background-color: $color-bg;
-    border: 1px solid var(--gold, #FC0);
 }
