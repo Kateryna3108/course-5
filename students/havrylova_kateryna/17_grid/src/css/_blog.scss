@@ -1,0 +1,130 @@
+.page {
+    padding: $container-padding;
+    max-width: $container-max-width;
+}
+
+img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.main {
+    grid-area: main;
+    margin-top: 120px;
+}
+
+.blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    // padding-top: 120px;
+    margin-bottom: 120px;
+
+    &__title {
+        grid-column: 1 / -1;
+        text-align: center;
+        margin: 0 0 50px 0;
+    }
+
+    // .blog__item
+
+    &__item {
+
+        &-col2 {
+            grid-column: span 2;
+        }
+
+        &-row2 {
+            grid-row: span 2;
+        }
+    }
+}
+
+.title {}
+
+.blog-article:hover::after {
+
+    // background: linear-gradient(0, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
+}
+
+.blog-article {
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 20px;
+    // overflow: hidden;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: linear-gradient(0, #241F24 0%, rgba(91, 91, 91, 0.45) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
+        //можна через градієнт, але ще є варіант блюру як картинки поверх іншого зображення
+        // background-image: url("../images/blure.png");
+        border-radius: 20px;
+    }
+
+
+
+    &:hover {
+        &::after {
+            background: linear-gradient(0, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
+        }
+
+        .blog-article__img-icon {
+            z-index: 1;
+            opacity: 1;
+            transition: .3s ease-in-out;
+        }
+    }
+
+    // .blog-article__img-icon
+    &__img-icon {
+        opacity: 0;
+
+        &_like {
+            @extend %icon-style;
+            left: 20px;
+        }
+
+        // .blog-article__img-icon_download
+
+        &_download {
+            @extend %icon-style;
+            right: 20px;
+        }
+
+    }
+
+    &__text {
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        padding: 20px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 90%;
+        font-family: 'Roboto';
+        font-size: 20px;
+        z-index: 2;
+
+
+        &-name {
+            color: $white-color;
+            font-weight: 500;
+        }
+
+        &-date {
+            color: $alto-color;
+            font-weight: 400;
+        }
+
+
+    }
+
+}
