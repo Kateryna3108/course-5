@@ -1,0 +1,90 @@
+@import "./logo";
+@import "./menu";
+@import "./button";
+
+.header {
+    .container {
+        @include flexnew();
+    }
+
+    .serach {
+
+        @include flex;
+
+        &__fields {
+            @extend %flex-jst-wrap;
+            @include flexnew(flex-end, nowrap);
+        }
+
+    }
+
+    .logo {
+        @include test {
+            font-size: 50px;
+        }
+
+        background-color: aqua;
+
+        &+.search {
+            padding: 15px;
+        }
+    }
+
+    >.menu {
+        background-color: red;
+    }
+
+    .menu {
+
+
+        padding: 15px;
+
+
+
+        &__wrapper {
+            list-style-type: none;
+        }
+
+        &__link {
+            font-size: 25px;
+
+            &:hover {
+                color: red;
+            }
+
+            &::after {
+                content: " sdsfdf";
+            }
+
+
+        }
+    }
+
+}
+
+.menu {
+
+    &__wrapper {
+        @extend %flex-jst-wrap;
+    }
+
+    &__link {
+        .active & {
+            color: red;
+        }
+    }
+}
+
+.menu {
+    &__item {
+        &:hover {
+            +.menu__item .menu__link {
+                color: green;
+            }
+        }
+    }
+}
+
+.logo {
+    @extend %posfix-center;
+}

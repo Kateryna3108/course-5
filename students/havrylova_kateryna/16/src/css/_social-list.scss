@@ -1,0 +1,108 @@
+$label-item-bg: $white-color;
+
+.social-list {
+
+    // .social-list__input
+
+    &__input {
+        @include social-item(facebook);
+        @include social-item(instagram);
+        @include social-item(linkedin);
+        @include social-item(google);
+        @include social-item(twitter);
+        // &[name="facebook"]:checked~.social-list__row {
+        //     .social-list__item_facebook {
+        //         opacity: 1;
+        //     }
+
+        //     .social-list__url-item_facebook {
+        //         opacity: 1;
+        //         transform: translateX(0);
+        //     }
+        // }
+
+        &:checked~.social-list__row {
+            .social-list__label_opacity {
+                opacity: 1;
+            }
+        }
+    }
+
+    // .social-list__row
+
+    &__row {}
+
+    // .social-list__label
+
+    &__label {
+        @extend .form-control__label;
+        margin: 0;
+
+        &_opacity {
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+        }
+    }
+
+    // .social-list__items-wrapper
+
+    &__items-wrapper {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    // .social-list__item
+
+    &__item {
+
+        display: flex;
+        flex-direction: row-reverse;
+        opacity: .4;
+        transition: opacity .3s ease-in-out;
+        margin-bottom: 5px;
+
+        // .social-list__item_facebook
+
+        &_facebook {}
+    }
+
+    // .social-list__label-item
+
+    &__label-item {
+        flex-grow: 1;
+        background-color: $label-item-bg;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+
+    }
+
+    // .social-list__icon
+
+    &__icon {}
+
+    // .social-list__url-items-wrapper
+
+    &__url-items-wrapper {
+        @extend .social-list__items-wrapper;
+        overflow: hidden;
+    }
+
+    // .social-list__url-item
+
+    &__url-item {
+        transform: translateX(-100%);
+        opacity: .4;
+        transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+        margin-bottom: 5px;
+
+        // .social-list__url-item_facebook
+
+        &_facebook {}
+    }
+}
+
+.input-hidden {
+    @include visuality-hidden;
+}

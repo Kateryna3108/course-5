@@ -1,0 +1,11 @@
+@include font-face('roboto-v30-latin-regular');
+
+// @include font-face('roboto-v30-latin-700', 700);
+
+body {
+    font-family: $main-font;
+    background-color: $default-body-color;
+    font-size: $default-font-size;
+}
+
+@include grid();

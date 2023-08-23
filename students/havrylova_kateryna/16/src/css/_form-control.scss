@@ -1,0 +1,80 @@
+$label-font-size: 20px;
+$label-color: $white-color;
+$label-bg: $gray-8-color;
+$icon-bg: $gray-3-color;
+$icon-color: $grey-7-color;
+$input-height: 50px;
+$icon-height: $input-height;
+$icon-width: $icon-height;
+$icon-img-size: math.div($input-height, 2);
+$icon-focus-color: $orang-color;
+
+.form-control {
+    &_required {
+        .form-control__label {
+            &::after {
+                content: '*';
+            }
+        }
+    }
+
+    // .form-control__label
+
+    &__label {
+        font-size: $label-font-size;
+        color: $label-color;
+        background-color: $label-bg;
+        display: block;
+        padding: 5px 10px;
+    }
+
+    // .form-control__group
+
+    &__group {
+        display: flex;
+
+        &_right {
+            flex-direction: row-reverse;
+        }
+    }
+
+    // .form-control__input
+
+    &__input {}
+
+    // .form-control__icon
+
+    &__icon {}
+}
+
+.form-input {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    padding: 0 10px;
+    height: $input-height;
+    border: none;
+    width: calc(100% - $icon-width);
+
+    &:focus+.icon .icon__img {
+        fill: $icon-focus-color;
+    }
+}
+
+
+
+.icon {
+    background-color: $icon-bg;
+    width: $icon-width;
+    height: $icon-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__img {
+        width: $icon-img-size;
+        height: $icon-img-size;
+        fill: $icon-color;
+    }
+}

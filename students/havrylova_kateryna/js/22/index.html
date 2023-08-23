@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            fbndkbgdmnfbg
+        </h1>
+    </header>
+    <!-- не використовувати таке підключення:
+    <a href="javascript: alert('ok')">ok</a> -->
+
+    <script>
+
+    </script>
+    <main></main>
+
+    <script>
+        'use strict';
+
+        // одностроковий коментар - пояснення що робить код
+        /*
+        багатостроковий 
+        коментар - 
+        пояснення що робить код
+        */
+
+        /**
+         * jsDoc - документація - специфікація функцій 
+         * (що повертає та чи інща функція)
+         * 
+         * */
+
+        console.log(f);
+        var f = 2;
+        var f = 33;
+        {
+            var f = 44;
+        }
+        console.log(f);
+        f = f * 3;
+        console.log(f);
+
+        let a = 'sds';
+        let aq = 1;
+        aq = 2;
+        {
+            let a = 2;
+            console.log(aq, a);
+        }
+        console.log(a);
+        const PI = Math.PI;
+        const pi = Math.PI;
+
+        console.log(pi);
+
+        const firstNameKateryna = 'Kateryna'; //[a-zA-Z_$][a-zA-Z_$0-9]
+        const lastNameHavrylova = 'Havrylova';
+        const fullNameKaterynaHavrylova = firstNameKateryna + ' ' + lastNameHavrylova;
+        console.log(fullNameKaterynaHavrylova);
+
+        const firstName = prompt('What is your name?', '');
+        console.log(firstName);
+
+        const isAcsess = confirm('18 +?');
+        console.log(isAcsess);
+
+        // const прізвище = 'Ldfjndn'; - кирилиця в коді дозволена на рівні програми, але не можна писати бо мова програмування - англійська
+        // console.log(прізвище);
+    </script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

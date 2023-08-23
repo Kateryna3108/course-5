@@ -1,0 +1,10 @@
+@include font-face('roboto-v30-latin-regular');
+@include font-face('roboto-v30-latin-regular', $_font-style: italic);
+
+body {
+    font-family: $main-font;
+    background-color: $default-body-color;
+    font-size: $default-font-size;
+}
+
+@include grid();

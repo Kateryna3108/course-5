@@ -1,0 +1,11 @@
+@import "./menu";
+
+.header {
+    border-bottom: $default-border;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

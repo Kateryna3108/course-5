@@ -1,0 +1,17 @@
+@font-face {
+    font-family: $default-font-name;
+    font-size: normal;
+    font-weight: 400;
+    src: url('#{$font-path}roboto-v30-latin-regular.woff2') format('woff2');
+}
+
+body {
+    background-color: $default-body-color;
+    font-family: $main-font;
+}
+
+.container {
+    padding: $container-padding;
+    max-width: $container-max-width;
+    margin: 0 auto;
+}

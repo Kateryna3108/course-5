@@ -1,0 +1,54 @@
+.message__row {
+    width: 100%;
+    padding: 0 15px;
+    margin-top: -15px;
+}
+
+.message {
+
+    // .message__item
+
+    &__item {
+        display: inline-block;
+    }
+}
+
+.form-control {
+
+    // .form-control__label
+
+    &__label {}
+}
+
+.input-form {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.textarea {
+    resize: none;
+    height: 150px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    // outline: none;
+    // overflow: auto;
+}
+
+.message {
+
+    // .messaget__icon
+
+    &__icon {
+        height: auto;
+    }
+}
+
+.icon {
+
+    // .icon__img
+
+    &__img {}
+}

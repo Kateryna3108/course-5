@@ -1,0 +1,13 @@
+@import "./logo";
+@import "./menu";
+@import "./auth";
+
+.header {
+    padding: 17px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

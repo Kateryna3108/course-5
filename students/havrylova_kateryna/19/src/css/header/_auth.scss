@@ -1,0 +1,29 @@
+.auth {
+    display: flex;
+    gap: 20px;
+
+    // @media screen and (max-width: 900px) {
+    //     display: none;
+    // }
+
+    // .auth_link
+    &_link {
+        // &:first-child {
+        //     margin-right: 20px;
+        // }
+
+    }
+
+}
+
+// @media screen and (max-width: 900px) {
+//     .auth {
+//         display: none;
+//     }
+// }
+
+@media print {
+    .auth {
+        display: none;
+    }
+}
