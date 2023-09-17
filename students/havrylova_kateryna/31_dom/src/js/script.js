@@ -1,4 +1,4 @@
-var playList = [
+const playList = [
     {
         author: "LED ZEPPELIN",
         song: "STAIRWAY TO HEAVEN"
@@ -40,28 +40,38 @@ var playList = [
     }
 ];
 
-const list = document.createElement('ol');
-console.log(list);
 
-document.body.prepend(list);
-list.setAttribute('type', 1);
 
-for (let i = 0; i < playList.length; i++) {
-    let listItem = document.createElement('li');
-    listItem.setAttribute('value', i + 1);
+function generateList(playList) {
+    const ol = document.createElement('ol');
+    ol.type = '1';
 
-    let author = document.createElement('strong');
-    author.textContent = 'Author: ';
-    listItem.append(author);
-    listItem.append(document.createTextNode(playList[i].author + ','));
+    playList.forEach((item, index) => {
+        const li = document.createElement('li');
+        li.value = index + 1;
 
-    let br = document.createElement('br');
-    listItem.append(br);
+        const author = document.createElement('strong');
+        author.textContent = 'Author: ';
 
-    let song = document.createElement('strong');
-    song.textContent = 'Song: ';
-    listItem.append(song);
-    listItem.append(document.createTextNode(playList[i].song + ';'));
+        const authorText = document.createTextNode(item.author);
+        const br = document.createElement('br');
 
-    list.append(listItem);
+        const song = document.createElement('strong');
+        song.textContent = 'Song: ';
+
+        const songText = document.createTextNode(item.song);
+
+        li.append(author);
+        li.append(authorText);
+        li.append(br);
+        li.append(song);
+        li.append(songText);
+
+        ol.append(li);
+    });
+
+    return ol;
 }
+
+document.body.prepend(generateList(playList));
+
