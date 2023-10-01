@@ -1,0 +1,26 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserslist": [
+    "last 3 version",
+    "> 1%",
+    "IE 11"
+  ],
+  "author": "Kateryna Havrylova",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.20"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "just-validate": "^4.2.0",
+    "just-validate-plugin-date": "^1.2.0",
+    "jquery": "^3.7.1",
+    "slick-carousel": "^1.8.1"
+  }
+}

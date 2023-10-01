@@ -178,10 +178,9 @@ for (let i = 0; 10 > i; i++) {
 }
 
 const numb = +prompt("Enter number from 3 to 10");
-const symbol = "#";
+const hash = "#";
 for (let i = 0; i < numb; i++) {
     for (let j = 0; j < numb; j++) {
-        console.log(symbol);
+        console.log(hash);
     }
 }
-

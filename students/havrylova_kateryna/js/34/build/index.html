@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+    <title>Js type</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .course-list__card {
+            max-width: 150px;
+        }
+    </style>
+</head>
+
+<body class="page">
+    <main>
+        <section class="add-student-block mb-5 pb-5">
+            <div class="container">
+                <h2 class="display-2 fw-bolder mb-5">Create course</h2>
+                <form class="add-student-form" method="post" action="#">
+                    <div class="form-floating mb-4 reqaired">
+                        <input type="text" name="course-name" class="form-control" id="courseName"
+                            placeholder="Course name" value="">
+                        <label for="courseName">Course name</label>
+                    </div>
+                    <div class="form-floating mb-4 reqaired">
+                        <input type="number" name="duration" class="form-control" id="duration" placeholder="Duration"
+                            value="">
+                        <label for="duration">Duration</label>
+                    </div>
+                    <div class="form-floating mb-4 reqaired">
+                        <input type="date" name="start-date" class="form-control" id="startDate"
+                            placeholder="Start date" value="">
+                        <label for="startDate">Start date</label>
+                    </div>
+                    <div class="form-floating mb-4 reqaired">
+                        <select class="form-select" name="speakers" id="speakers">
+                            <option value="" selected>Select the speaker</option>
+                            <option value="dizel">Win Dizel</option>
+                            <option value="statham">Jason Statham</option>
+                            <option value="shakespeare">William Shakespeare</option>
+                        </select>
+                        <label for="speakers">Speakers</label>
+                    </div>
+                    <div id="card_prev" class="card mb-3" style="display: none;">
+                        <div class="row g-0">
+                            <div class="col-md-2">
+                                <img src="./images/dizel.jpg" class="img-fluid w-100 object-fit-fill border rounded"
+                                    alt="Win Dizel">
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <h5 class="card-title">Win Dizel</h5>
+                                    <p class="card-text">Mark Sinclair (born July 18, 1967), known professionally as Vin
+                                        Diesel, is an American actor and film producer. One of the world's
+                                        highest-grossing actors, he is best known for playing Dominic Toretto in the
+                                        Fast Furious franchise.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-floating mb-4 d-flex justify-content-between">
+                        <button type="reset" class="btn btn-secondary">Cansel</button>
+                        <button type="submit" class="btn btn-primary">Add Course</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="course-list-block">
+            <div class="container">
+                <div class="row">
+                    <h3 class="col-12 display-4 fw-bolder mb-5">Course list</h3>
+                    <div class="table-responsive">
+                        <table class="table course-list">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Speakers</th>
+                                    <th scope="col">Students</th>
+                                    <th scope="col">Remove Course</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

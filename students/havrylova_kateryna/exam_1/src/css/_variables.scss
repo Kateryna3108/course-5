@@ -1,0 +1,54 @@
+$default-width: 1200px;
+
+$gap: 15px;
+
+//colors
+$color-orange: #FF9900;
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-gray: #999999;
+$color-darkgray: #333333;
+$color-lightgary: #F4F4F4;
+$color-darkblue: #5373FD;
+$color-red: #FF6363;
+$color-blue: #00A2FF;
+$color-gray-opacity: rgba(35, 35, 35, 0.9);
+
+
+//fonts
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-20: 20px;
+$font-size-22: 22px;
+$font-size-24: 24px;
+$font-size-36: 36px;
+$font-size-48: 48px;
+
+$font-weight-300: 300;
+$font-weight-400: 400;
+$font-weight-700: 700;
+
+$line-height-20: 20px;
+$line-height-28: 28px;
+$line-height-40: 40px;
+$line-height-52: 52px;
+$default-body-color: $color-white;
+$default-body-bg-color: $color-darkgray;
+
+$fallback: Arial, Helvetica, sans-serif;
+$default-font-name: Josefin Sans;
+$main-font: $default-font-name, $fallback;
+$default-font-size: 16px;
+$default-font-weight: $font-weight-300;
+
+$font-second-font: Aleo;
+$default-font-second-font: $font-second-font, $fallback;
+$font-path: './fonts/';
+
+$breack-points: (
+    "lg": 1200px,
+    "md": 1024px,
+    "sm": 768px,
+    "xs": 576px,
+    "xxs": 480px
+);

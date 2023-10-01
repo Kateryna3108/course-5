@@ -1,0 +1,71 @@
+// @use 'sass:math';
+// @import "./variables";
+// @import "./extend";
+// @import "./mixins";
+// @import "./fonts";
+// @import "./global";
+// @import "./form";
+// @import "./header/header";
+$modal-padding: 15px;
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+    display: none;
+    justify-content: center;
+
+    // .modal__window
+    &.open {
+        display: flex;
+    }
+
+    &__window {
+        min-width: 320px;
+        background-color: white;
+        margin-top: 10%;
+        align-self: flex-start;
+        border-radius: 5px;
+    }
+
+    // .modal__header
+
+    &__header {
+        padding: $modal-padding;
+    }
+
+    // .modal__title
+
+    &__title {
+        margin: 0;
+    }
+
+    // .modal__content
+
+    &__content {
+        padding: $modal-padding;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+    }
+
+    // .modal__text
+
+    &__text {
+        margin: 0;
+
+    }
+
+    // .modal__footer
+
+    &__footer {
+        padding: $modal-padding;
+        text-align: right;
+    }
+
+    // .modal__close
+
+    &__close {}
+}

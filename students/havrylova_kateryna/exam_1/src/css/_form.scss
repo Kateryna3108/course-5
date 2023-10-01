@@ -1,0 +1,26 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: $color-darkblue;
+
+    @include fonts-type ($font-second-font, $font-size-14, $font-weight-400, $line-height-20, 1.4px);
+    text-align: center;
+    color: $color-white;
+}
+
+.main__btn {
+    width: 213px;
+    height: 60px;
+    text-transform: uppercase;
+}
+
+.input {
+
+    @include placeholder {
+        @include fonts-type ($main-font, $font-size-14, $font-weight-400, $line-height-20, 2.8px);
+        color: $color-gray;
+
+    }
+}

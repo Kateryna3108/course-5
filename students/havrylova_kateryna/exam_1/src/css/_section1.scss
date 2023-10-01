@@ -1,0 +1,92 @@
+.choose {
+    background: url('../images/background1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    &__text {
+        padding-top: 24px;
+        padding-bottom: 32px;
+
+        @include media() {
+            text-align: center;
+        }
+    }
+
+    &__img-wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 0 15px;
+        margin: 124px auto;
+
+        @include media() {
+            margin-top: 45px;
+            margin-bottom: 17px;
+            order: -1;
+            flex-direction: column;
+        }
+    }
+
+    &__img {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        @include media() {
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+
+    &__photo-1 {
+        padding-right: 60px;
+
+        padding-bottom: 8px;
+
+        @include media(lg) {
+            padding-right: 35px;
+        }
+
+        @include media() {
+            padding: 15px;
+            object-fit: cover;
+        }
+    }
+
+    &__photo-2 {
+
+        padding-left: 60px;
+        padding-top: 8px;
+
+        @include media() {
+            padding: 15px;
+            object-fit: cover;
+        }
+
+    }
+
+    &__btn {
+        @include media() {
+            margin: 0 auto;
+        }
+    }
+
+    &__title-h2 {
+        @include media() {
+            text-align: center;
+        }
+    }
+}
+
+.img {
+    display: block;
+}
