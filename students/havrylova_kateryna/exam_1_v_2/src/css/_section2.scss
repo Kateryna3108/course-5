@@ -1,0 +1,43 @@
+.sprites {
+    background-color: $color-darkgray;
+
+    &__wrapper {
+        padding-top: 125px;
+        padding-bottom: 28px;
+
+        @include media() {
+            padding: 60px 0;
+        }
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        z-index: 100;
+    }
+
+
+    &__search {
+        fill: $color-darkblue;
+    }
+
+    &__ok {
+        fill: $color-red;
+    }
+
+    &__like {
+        fill: $color-blue;
+    }
+
+}
+
+
+.sprite {
+    &__text {
+        @include fonts-type ($font-second-font, $font-size-36, $font-weight-400, $line-height-40);
+        padding-top: 20px;
+    }
+}

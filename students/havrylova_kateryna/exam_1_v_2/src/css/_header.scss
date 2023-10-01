@@ -1,0 +1,205 @@
+@import './section1';
+@import './section2';
+@import './section3';
+@import './section4';
+
+.header {
+    height: 100vh;
+
+    &__menu {
+        background-color: $color-darkblue;
+        padding: 32px 15px;
+        z-index: 1000;
+
+        @include media(xs) {
+            position: relative;
+        }
+    }
+
+    &__logo {
+        @include media() {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__nav {
+        @include media() {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @include media(xs) {
+            padding: 0;
+        }
+
+    }
+}
+
+.hero {
+    height: calc(100% - 84px);
+    background: url('../images/headerbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    @include media() {
+        height: calc(100% - 134px);
+    }
+
+    @include media(sm) {
+        height: calc(100% - 108px);
+    }
+
+    @include media(xs) {
+        height: calc(100% - 84px);
+    }
+
+    &__wrapper {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    & .container {
+        height: 100%;
+    }
+
+    &__title {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__wrapper,
+    &__title {
+        width: 100%;
+    }
+}
+
+.subtitle {
+    margin-top: 10px;
+    @include fonts-type ($main-font, $font-size-22, $font-weight-400, $line-height-28, 6.82px);
+    color: $color-white;
+    text-align: center;
+}
+
+.search {
+    margin-top: 48px;
+    width: 100%;
+
+    &__wrapper {
+        width: 647px;
+        height: 60px;
+        background-color: $color-white;
+        display: flex;
+        margin: 0 auto;
+        position: relative;
+
+        @include media() {
+            width: 540px;
+        }
+
+        @include media(xs) {
+            width: 100%;
+        }
+    }
+
+    &__input {
+        border: none;
+        width: calc(100% - 149px);
+        margin-left: 36px;
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include fonts-type ($font-second-font, $font-size-14, $font-weight-400, $line-height-20, 1.4px);
+        border: none;
+        margin: 4px;
+        width: 139px;
+        text-transform: uppercase;
+        padding: 0 24px;
+    }
+
+    &__svg {
+        fill: $color-white;
+    }
+
+    &__span {
+        padding-left: 12px;
+    }
+}
+
+.scroll {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 120px;
+
+
+    &__link {
+        text-align: center;
+        color: $color-white;
+    }
+
+    &__down {
+        margin-top: 4px;
+        fill: $color-white;
+    }
+
+    &__text {
+        @include fonts-type ($main-font, $font-size-14, $font-weight-400, $line-height-20, 2.8px);
+    }
+}
+
+
+
+.menu {
+
+    &__wrapper {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+
+        @include media(xs) {
+            justify-content: flex-start;
+            height: calc(100% - 124px);
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            padding-right: 40px;
+
+            @include media(xs) {
+                padding-right: 0;
+            }
+        }
+
+        @include media(xs) {
+            padding: 12px 0;
+            width: 100%;
+        }
+    }
+
+    &__link {
+        color: $color-white;
+        @include fonts-type ($font-second-font, $font-size-14, $font-weight-400, $line-height-20, 1.4px);
+        text-transform: uppercase;
+    }
+}

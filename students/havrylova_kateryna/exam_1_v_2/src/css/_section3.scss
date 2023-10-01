@@ -1,0 +1,60 @@
+.spain {
+
+    &__content {
+        padding: 29px 20px;
+
+    }
+
+    &__bg {
+        background: $color-gray-opacity;
+        margin: 0 15px;
+    }
+
+    &__text {
+        padding-bottom: 24px;
+        padding-top: 16px;
+    }
+
+}
+
+.bg3 {
+    background: url('../images/background2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg4 {
+    background: url('../images/background3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.spain1 {
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 220px;
+    padding-bottom: 120px;
+
+    @include media() {
+        padding: 120px 0;
+    }
+}
+
+.spain2 {
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 220px;
+    padding-bottom: 125px;
+
+    @include media() {
+        padding: 120px 0;
+    }
+}
+
+.h3-subtitle {
+    @include fonts-type ($main-font, $font-size-20, $font-weight-300, $line-height-28, 2px);
+    color: $color-white;
+    padding-bottom: 16px;
+}

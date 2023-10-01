@@ -1,0 +1,42 @@
+.tourist {
+
+    background: url('../images/background4.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__wrapper {
+        margin: 0 15px;
+        padding-top: 115px;
+        padding-bottom: 180px;
+
+        @include media() {
+            padding-top: 60px;
+            padding-bottom: 120px;
+        }
+    }
+
+    &__title-h2 {
+        text-align: center;
+        padding: unset;
+        padding-bottom: 60px;
+    }
+
+    &__content {
+        background-color: $color-darkgray;
+        padding: 50px 60px;
+    }
+
+    &__img {
+        padding: 0;
+        object-fit: cover;
+    }
+
+    &__text {
+        padding-top: 10px;
+    }
+
+    &__quot {
+        fill: $color-darkblue;
+    }
+}
